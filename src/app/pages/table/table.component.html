@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4 class="card-title"> Profils favoris</h4>
+      </div>
+      
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table">
+            <thead class=" text-primary">
+              <th>
+                Nom
+              </th>
+              <th>
+                Prénom
+              </th>
+              <th>
+                Email
+              </th>
+              <th>
+                  Domaine
+                </th>
+              <th >
+              Point fort
+              </th>
+              <th >
+                Contacter
+                </th>
+            </thead>
+            <tbody>
+              <tr *ngFor= 'let profil of listDesFavories' >
+                <td>
+                  {{profil.nom}}
+                </td>
+                <td>
+                    {{profil.prenom}}
+                </td>
+                <td>
+                    {{profil.email}}
+                </td>
+                <td>
+                    {{profil.domaine}}
+                  </td>
+                <td >
+                    {{profil.competence}}
+                </td>
+                <td >
+                  <button class="btn btn-primary btn-block" (click)= 'chatter()'>Chatter</button>
+              </td>
+              </tr>
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
